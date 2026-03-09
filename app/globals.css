@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+:root {
+  --apex-black: #0a0a0a;
+  --apex-dark: #141414;
+  --apex-dark-2: #1c1c1c;
+  --apex-gold: #c8a96e;
+  --apex-gold-light: #dfc28e;
+  --apex-gold-muted: #9a7d4e;
+  --apex-cream: #f5f0e8;
+  --apex-muted: #6b6b6b;
+  --apex-border: #2a2a2a;
+}
+
+@theme inline {
+  --color-apex-black: var(--apex-black);
+  --color-apex-dark: var(--apex-dark);
+  --color-apex-dark-2: var(--apex-dark-2);
+  --color-apex-gold: var(--apex-gold);
+  --color-apex-gold-light: var(--apex-gold-light);
+  --color-apex-gold-muted: var(--apex-gold-muted);
+  --color-apex-cream: var(--apex-cream);
+  --color-apex-muted: var(--apex-muted);
+  --color-apex-border: var(--apex-border);
+  --font-display: var(--font-cormorant);
+  --font-sans: var(--font-jakarta);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background-color: var(--apex-black);
+  color: var(--apex-cream);
+  font-family: var(--font-jakarta), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-cormorant), serif;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--apex-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--apex-gold-muted);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--apex-gold);
+}
+
+::selection {
+  background: var(--apex-gold);
+  color: var(--apex-black);
+}
+
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollLine {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(250%);
+    opacity: 0;
+  }
+}
