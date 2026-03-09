@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import StatsBar from "@/components/StatsBar";
 import Introduction from "@/components/Introduction";
 import HighlightReel from "@/components/HighlightReel";
 import Services from "@/components/Services";
@@ -14,7 +13,6 @@ export default function Home() {
     <main className="bg-apex-black">
       <Navbar />
       <Hero />
-      <StatsBar />
       <Introduction />
       <HighlightReel />
       <About />
