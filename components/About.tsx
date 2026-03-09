@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -76,11 +77,15 @@ export default function About() {
     <section id="about" className="bg-apex-dark border-t border-apex-border scroll-mt-20">
       {/* Top — full width image with story overlay */}
       <div className="relative h-[60vh] min-h-[400px] overflow-hidden">
-        <div
-          ref={imgRef}
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/about-bg.jpg')" }}
-        />
+        <div ref={imgRef} className="absolute inset-0 w-full h-full">
+          <Image
+            src="/about-bg.jpg"
+            alt="About Zabelo Builders"
+            fill
+            sizes="100vw"
+            style={{ objectFit: "cover", objectPosition: "center" }}
+          />
+        </div>
         <div className="absolute inset-0 bg-linear-to-r from-apex-black/95 via-apex-black/70 to-apex-black/20" />
         <div className="absolute inset-0 bg-linear-to-t from-apex-dark via-transparent to-transparent" />
 

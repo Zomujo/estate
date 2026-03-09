@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import Image from "next/image";
 
 const ticker = [
   "Excellence",
@@ -85,11 +86,16 @@ export default function Hero() {
   return (
     <section id="home" className="relative w-full h-screen min-h-[680px] flex flex-col justify-center overflow-hidden">
       {/* Background image with parallax container */}
-      <div
-        ref={imgRef}
-        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/hero-bg.jpg')" }}
-      />
+      <div ref={imgRef} className="absolute inset-0 w-full h-full">
+        <Image
+          src="/hero-bg.jpg"
+          alt="Zabelo Builders Hero"
+          fill
+          priority
+          sizes="100vw"
+          style={{ objectFit: "cover", objectPosition: "center" }}
+        />
+      </div>
 
       {/* Permanent dark gradient overlay */}
       <div className="absolute inset-0 bg-linear-to-r from-apex-black/90 via-apex-black/60 to-apex-black/20" />
@@ -150,8 +156,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-24 left-6 z-10 flex items-center gap-3">
+      {/* Scroll indicator — hidden on mobile to avoid overlapping CTA buttons */}
+      <div className="absolute bottom-24 left-6 z-10 hidden md:flex items-center gap-3">
         <div className="w-px h-12 bg-apex-gold/40 relative overflow-hidden">
           <div className="absolute top-0 w-full bg-apex-gold animate-[scrollLine_1.8s_ease-in-out_infinite]" style={{ height: "40%" }} />
         </div>

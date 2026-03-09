@@ -101,8 +101,8 @@ export default function Contact() {
               </div>
               <div>
                 <p className="font-sans text-xs tracking-[0.3em] uppercase text-apex-gold mb-1">Phone / WhatsApp</p>
-                <a href="tel:0200123456" className="font-sans text-sm text-apex-muted hover:text-apex-cream transition-colors">
-                  0200 123 4567
+                <a href="tel:0241197843" className="font-sans text-sm text-apex-muted hover:text-apex-cream transition-colors">
+                  0241197843
                 </a>
               </div>
             </div>
@@ -117,8 +117,8 @@ export default function Contact() {
               </div>
               <div>
                 <p className="font-sans text-xs tracking-[0.3em] uppercase text-apex-gold mb-1">Email</p>
-                <a href="mailto:zabelo@mail.com" className="font-sans text-sm text-apex-muted hover:text-apex-cream transition-colors">
-                  zabelo@mail.com
+                <a href="mailto:admin@zabelobuilders.com" className="font-sans text-sm text-apex-muted hover:text-apex-cream transition-colors">
+                  admin@zabelobuilders.com
                 </a>
               </div>
             </div>

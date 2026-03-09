@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -108,11 +109,16 @@ export default function ZabeloHorizonProject() {
 
       {/* I. Hero Section (The Vision) */}
       <section className="relative w-full h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-        <div
-          ref={heroRef}
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/nsawam-bg.jpg')" }} // Reusing the nsawam image
-        />
+        <div ref={heroRef} className="absolute inset-0 w-full h-full">
+          <Image
+            src="/nsawam-bg.jpg"
+            alt="The Zabelo Horizon Nsawam"
+            fill
+            priority
+            sizes="100vw"
+            style={{ objectFit: "cover", objectPosition: "center" }}
+          />
+        </div>
         <div className="absolute inset-0 bg-linear-to-b from-apex-black/80 via-apex-black/50 to-apex-black" />
         
         <div className="relative z-10 max-w-4xl mx-auto px-10 md:px-20 text-center mt-20">
@@ -138,10 +144,15 @@ export default function ZabeloHorizonProject() {
       <section className="border-t border-apex-border">
         {/* Full-width cinematic image banner */}
         <div className="relative h-[50vh] min-h-[400px] overflow-hidden">
-          <div 
-            className="absolute inset-0 bg-cover bg-center fade-up"
-            style={{ backgroundImage: "url('/nsawam_road.png')" }}
-          />
+          <div className="absolute inset-0 w-full h-full fade-up">
+            <Image
+              src="/nsawam_road.png"
+              alt="Nsawam Road Infrastructure"
+              fill
+              sizes="100vw"
+              style={{ objectFit: "cover", objectPosition: "center" }}
+            />
+          </div>
           <div className="absolute inset-0 bg-linear-to-r from-apex-black/90 via-apex-black/60 to-transparent" />
           <div className="absolute inset-0 bg-linear-to-t from-apex-dark via-transparent to-apex-black/40" />
           
@@ -255,10 +266,15 @@ export default function ZabeloHorizonProject() {
         {/* Visual Break */}
         <div className="max-w-6xl mx-auto px-10 md:px-20 mt-20 md:mt-32 fade-up">
            <div className="relative h-[400px] md:h-[500px] w-full overflow-hidden border border-apex-gold/20">
-             <div 
-               className="absolute inset-0 bg-cover bg-center" 
-               style={{ backgroundImage: "url('/zabelo_gated.png')" }} 
-             />
+             <div className="absolute inset-0 w-full h-full">
+               <Image
+                 src="/zabelo_gated.png"
+                 alt="Zabelo Builders Gated Community"
+                 fill
+                 sizes="(max-width: 768px) 100vw, 1152px"
+                 style={{ objectFit: "cover", objectPosition: "center" }}
+               />
+             </div>
              <div className="absolute inset-0 bg-linear-to-t from-apex-black/80 to-transparent" />
              <div className="absolute bottom-10 left-10">
                 <p className="font-sans text-xs tracking-[0.3em] uppercase text-apex-gold mb-2">
@@ -321,7 +337,7 @@ export default function ZabeloHorizonProject() {
             The Zabelo Horizon is limited to 50 professionals. This is an invitation to be part of an elite group of early-stage investors in Ghana’s newest commuter hub.
           </p>
           <a
-            href="mailto:sales@zabelobuilders.com?subject=Inquiry: The Zabelo Horizon"
+            href="mailto:admin@zabelobuilders.com?subject=Inquiry: The Zabelo Horizon"
             className="inline-flex items-center gap-2 bg-apex-gold text-apex-black font-sans text-sm tracking-widest uppercase px-10 py-5 hover:bg-apex-cream transition-colors duration-300"
           >
             Contact Sales Team

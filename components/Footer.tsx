@@ -21,8 +21,8 @@ const footerLinks = [
     heading: "Contact",
     links: [
       { label: "Airport Residential Area, Accra", href: "#" },
-      { label: "0200 123 4567", href: "tel:02001234567" },
-      { label: "zabelo@mail.com", href: "mailto:zabelo@mail.com" },
+      { label: "0241197843", href: "tel:0241197843" },
+      { label: "admin@zabelobuilders.com", href: "mailto:admin@zabelobuilders.com" },
     ],
   },
 ];
