@@ -71,7 +71,7 @@ export default function Contact() {
               Ready to Start Your Project?
             </h2>
           </div>
-          <p className="font-sans text-sm text-apex-muted leading-relaxed max-w-sm">
+          <p className="font-sans text-sm text-apex-cream/75 leading-relaxed max-w-sm">
             Whether you have a fully drafted plan or are just beginning to
             explore your real estate options in Ghana, our team is ready to
             listen.
@@ -88,7 +88,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="font-sans text-xs tracking-[0.3em] uppercase text-apex-gold mb-1">Office</p>
-                <p className="font-sans text-sm text-apex-muted">Airport Residential Area, Accra, Ghana</p>
+                <p className="font-sans text-sm text-apex-cream/75">Airport Residential Area, Accra, Ghana</p>
               </div>
             </div>
 
@@ -101,7 +101,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="font-sans text-xs tracking-[0.3em] uppercase text-apex-gold mb-1">Phone / WhatsApp</p>
-                <a href="tel:0241197843" className="font-sans text-sm text-apex-muted hover:text-apex-cream transition-colors">
+                <a href="tel:0241197843" className="font-sans text-sm text-apex-cream/75 hover:text-apex-cream transition-colors">
                   0241197843
                 </a>
               </div>
@@ -117,7 +117,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="font-sans text-xs tracking-[0.3em] uppercase text-apex-gold mb-1">Email</p>
-                <a href="mailto:admin@zabelobuilders.com" className="font-sans text-sm text-apex-muted hover:text-apex-cream transition-colors">
+                <a href="mailto:admin@zabelobuilders.com" className="font-sans text-sm text-apex-cream/75 hover:text-apex-cream transition-colors">
                   admin@zabelobuilders.com
                 </a>
               </div>
@@ -131,7 +131,7 @@ export default function Contact() {
             <div className="h-full flex flex-col items-start justify-center gap-4 py-12">
               <div className="w-12 h-px bg-apex-gold" />
               <h3 className="font-display text-4xl text-apex-cream">Message Received.</h3>
-              <p className="font-sans text-sm text-apex-muted leading-relaxed">
+              <p className="font-sans text-sm text-apex-cream/75 leading-relaxed">
                 Thank you for reaching out. A member of our team will be in touch with you shortly.
               </p>
             </div>
@@ -140,54 +140,54 @@ export default function Contact() {
               {/* Name + Email */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-2">
-                  <label className="font-sans text-[10px] tracking-[0.3em] uppercase text-apex-muted">
+                  <label className="font-sans text-[10px] tracking-[0.3em] uppercase text-apex-gold">
                     Full Name
                   </label>
                   <input
                     required
                     type="text"
                     placeholder="John Mensah"
-                    className="bg-transparent border-b border-apex-border focus:border-apex-gold outline-none font-sans text-sm text-apex-cream placeholder:text-apex-border py-3 transition-colors duration-300"
+                    className="bg-transparent border-b border-apex-light-border focus:border-apex-gold outline-none font-sans text-sm text-apex-charcoal placeholder:text-apex-light-border py-3 transition-colors duration-300"
                   />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <label className="font-sans text-[10px] tracking-[0.3em] uppercase text-apex-muted">
+                  <label className="font-sans text-[10px] tracking-[0.3em] uppercase text-apex-gold">
                     Email Address
                   </label>
                   <input
                     required
                     type="email"
                     placeholder="john@example.com"
-                    className="bg-transparent border-b border-apex-border focus:border-apex-gold outline-none font-sans text-sm text-apex-cream placeholder:text-apex-border py-3 transition-colors duration-300"
+                    className="bg-transparent border-b border-apex-light-border focus:border-apex-gold outline-none font-sans text-sm text-apex-charcoal placeholder:text-apex-light-border py-3 transition-colors duration-300"
                   />
                 </div>
               </div>
 
               {/* Phone */}
               <div className="flex flex-col gap-2">
-                <label className="font-sans text-[10px] tracking-[0.3em] uppercase text-apex-muted">
+                <label className="font-sans text-[10px] tracking-[0.3em] uppercase text-apex-gold">
                   Phone Number
                 </label>
                 <input
                   type="tel"
                   placeholder="0200 000 0000"
-                  className="bg-transparent border-b border-apex-border focus:border-apex-gold outline-none font-sans text-sm text-apex-cream placeholder:text-apex-border py-3 transition-colors duration-300"
+                  className="bg-transparent border-b border-apex-light-border focus:border-apex-gold outline-none font-sans text-sm text-apex-charcoal placeholder:text-apex-light-border py-3 transition-colors duration-300"
                 />
               </div>
 
               {/* Service */}
               <div className="flex flex-col gap-2">
-                <label className="font-sans text-[10px] tracking-[0.3em] uppercase text-apex-muted">
+                <label className="font-sans text-[10px] tracking-[0.3em] uppercase text-apex-gold">
                   Service Required
                 </label>
                 <select
                   required
                   defaultValue=""
-                  className="bg-apex-dark border-b border-apex-border focus:border-apex-gold outline-none font-sans text-sm text-apex-muted py-3 transition-colors duration-300 cursor-pointer"
+                  className="bg-apex-light-2 border-b border-apex-light-border focus:border-apex-gold outline-none font-sans text-sm text-apex-charcoal-muted py-3 transition-colors duration-300 cursor-pointer"
                 >
                   <option value="" disabled>Select a service</option>
                   {services.map((s) => (
-                    <option key={s} value={s} className="bg-apex-dark text-apex-cream">
+                    <option key={s} value={s} className="bg-apex-light text-apex-charcoal">
                       {s}
                     </option>
                   ))}
@@ -196,14 +196,14 @@ export default function Contact() {
 
               {/* Message */}
               <div className="flex flex-col gap-2">
-                <label className="font-sans text-[10px] tracking-[0.3em] uppercase text-apex-muted">
+                <label className="font-sans text-[10px] tracking-[0.3em] uppercase text-apex-gold">
                   Message
                 </label>
                 <textarea
                   required
                   rows={4}
                   placeholder="Tell us about your project..."
-                  className="bg-transparent border-b border-apex-border focus:border-apex-gold outline-none font-sans text-sm text-apex-cream placeholder:text-apex-border py-3 resize-none transition-colors duration-300"
+                  className="bg-transparent border-b border-apex-light-border focus:border-apex-gold outline-none font-sans text-sm text-apex-charcoal placeholder:text-apex-light-border py-3 resize-none transition-colors duration-300"
                 />
               </div>
 

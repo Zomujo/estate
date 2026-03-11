@@ -108,7 +108,7 @@ export default function ZabeloHorizonProject() {
       <Navbar />
 
       {/* I. Hero Section (The Vision) */}
-      <section className="relative w-full h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+      <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
         <div ref={heroRef} className="absolute inset-0 w-full h-full">
           <Image
             src="/nsawam-bg.jpg"
@@ -121,14 +121,14 @@ export default function ZabeloHorizonProject() {
         </div>
         <div className="absolute inset-0 bg-linear-to-b from-apex-black/80 via-apex-black/50 to-apex-black" />
         
-        <div className="relative z-10 max-w-4xl mx-auto px-10 md:px-20 text-center mt-20">
+        <div className="relative z-10 max-w-4xl mx-auto px-8 md:px-20 text-center pt-28 pb-16 md:pt-0 md:pb-0 md:mt-20">
           <p className="font-sans text-xs tracking-[0.4em] uppercase text-apex-gold mb-6">
             The Zabelo Horizon: Nsawam
           </p>
-          <h1 ref={titleRef} className="font-display text-5xl md:text-7xl leading-tight mb-8">
-            Secure Your Future in Ghana’s Next Great Commuter Corridor.
+          <h1 ref={titleRef} className="font-display text-4xl sm:text-5xl md:text-7xl leading-tight mb-6 md:mb-8">
+            Secure Your Future in Ghana's Next Great Commuter Corridor.
           </h1>
-          <p ref={textRef} className="font-sans text-lg text-apex-muted leading-relaxed max-w-2xl mx-auto mb-10">
+          <p ref={textRef} className="font-sans text-base text-apex-cream/75 leading-relaxed max-w-2xl mx-auto mb-8 md:mb-10">
             Accra is expanding, and the smart capital is moving North. The Zabelo Horizon is a master-planned gated community of 50+ premium plots engineered for the young Ghanaian professional.
           </p>
           <a
@@ -164,7 +164,7 @@ export default function ZabeloHorizonProject() {
               <h2 className="font-display text-5xl md:text-7xl text-apex-cream leading-tight max-w-2xl fade-up">
                 Why Nsawam?<br />Why Now?
               </h2>
-              <p className="font-sans text-base text-apex-muted leading-relaxed max-w-lg mt-6 fade-up">
+              <p className="font-sans text-base text-apex-cream/75 leading-relaxed max-w-lg mt-6 fade-up">
                 Under the President&apos;s Infrastructure Agenda, the Nsawam belt is undergoing a radical transformation. It is no longer a distance—it is the future.
               </p>
             </div>
@@ -198,7 +198,7 @@ export default function ZabeloHorizonProject() {
                   
                   {/* Description */}
                   <div className="md:col-span-6 flex items-start">
-                    <p className="font-sans text-sm text-apex-muted leading-relaxed">
+                    <p className="font-sans text-sm text-apex-cream/75 leading-relaxed">
                       {item.desc}
                     </p>
                   </div>
@@ -236,7 +236,7 @@ export default function ZabeloHorizonProject() {
               The Financial Structure
             </p>
             <h2 className="font-display text-4xl mb-6">Luxury Within Reach.</h2>
-            <p className="font-sans text-apex-muted leading-relaxed mb-10">
+            <p className="font-sans text-apex-cream/75 leading-relaxed mb-10">
               We believe that professional success should be rewarded with homeownership. We have stripped away the predatory pricing of central Accra to offer a high-value entry point.
             </p>
             
@@ -245,12 +245,12 @@ export default function ZabeloHorizonProject() {
                 Investment Entry
               </span>
               <span className="font-display text-4xl md:text-5xl text-apex-cream">
-                <span className="text-2xl text-apex-muted mr-2">GHS</span>
-                85,000<span className="text-xl text-apex-muted"> - 95,000</span>
+                <span className="text-2xl text-apex-cream/60 mr-2">GHS</span>
+                85,000<span className="text-xl text-apex-cream/60"> - 95,000</span>
               </span>
             </div>
 
-            <ul className="flex flex-col gap-4 font-sans text-sm text-apex-muted">
+            <ul className="flex flex-col gap-4 font-sans text-sm text-apex-cream/75">
               <li className="flex gap-3">
                 <div className="w-1.5 h-1.5 rounded-full bg-apex-gold mt-2 shrink-0" />
                 <span><strong className="text-apex-cream font-medium">Flexible Financing:</strong> Bespoke payment structures designed for young professionals.</span>
@@ -293,7 +293,7 @@ export default function ZabeloHorizonProject() {
         <div className="max-w-4xl mx-auto px-10 md:px-20 fade-up">
           <div className="text-center mb-16">
             <h2 className="font-display text-4xl md:text-5xl mb-4">Everything You Need to Know</h2>
-            <p className="font-sans text-apex-muted">Common questions about The Zabelo Horizon.</p>
+            <p className="font-sans text-apex-cream/75">Common questions about The Zabelo Horizon.</p>
           </div>
 
           <div className="flex flex-col border-t border-apex-border">
@@ -317,7 +317,7 @@ export default function ZabeloHorizonProject() {
                     openFaq === i ? "max-h-60 opacity-100 pb-8" : "max-h-0 opacity-0"
                   }`}
                 >
-                  <p className="font-sans text-apex-muted leading-relaxed">{faq.a}</p>
+                  <p className="font-sans text-apex-cream/75 leading-relaxed">{faq.a}</p>
                 </div>
               </div>
             ))}
@@ -333,7 +333,7 @@ export default function ZabeloHorizonProject() {
             Limited Availability
           </p>
           <h2 className="font-display text-5xl md:text-7xl mb-8">Secure Your Plot Today.</h2>
-          <p className="font-sans text-lg text-apex-muted leading-relaxed mb-12">
+          <p className="font-sans text-lg text-apex-cream/75 leading-relaxed mb-12">
             The Zabelo Horizon is limited to 50 professionals. This is an invitation to be part of an elite group of early-stage investors in Ghana’s newest commuter hub.
           </p>
           <a

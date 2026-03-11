@@ -105,7 +105,7 @@ export default function Hero() {
       <div ref={overlayRef} className="absolute inset-0 bg-apex-black pointer-events-none" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-10 md:px-20 pt-24">
+      <div className="relative z-10 max-w-6xl mx-auto px-8 md:px-20 pt-20 md:pt-24">
         {/* Eyebrow label */}
         <p className="font-sans text-xs tracking-[0.4em] uppercase text-apex-gold mb-6">
           Real Estate · Construction · Ghana
@@ -114,7 +114,7 @@ export default function Hero() {
         {/* Headline — each word is wrapped in a span for staggered animation */}
         <h1
           ref={headlineRef}
-          className="font-display text-6xl md:text-8xl lg:text-[6.5rem] text-apex-cream leading-none mb-8 max-w-4xl"
+          className="font-display text-5xl sm:text-6xl md:text-8xl lg:text-[6.5rem] text-apex-cream leading-none mb-5 md:mb-8 max-w-4xl"
         >
           {headlineWords.map((word, i) => (
             <span
@@ -129,7 +129,7 @@ export default function Hero() {
         {/* Sub-headline */}
         <p
           ref={subRef}
-          className="font-sans text-base md:text-lg text-apex-muted leading-relaxed max-w-xl mb-10 opacity-0"
+          className="font-sans text-sm md:text-lg text-apex-cream/75 leading-relaxed max-w-xl mb-6 md:mb-10 opacity-0"
         >
           From visionary real estate development to world-class construction
           execution, Zabelo Builders delivers excellence, integrity, and
@@ -137,10 +137,10 @@ export default function Hero() {
         </p>
 
         {/* CTAs */}
-        <div ref={ctaRef} className="flex flex-wrap gap-4 opacity-0">
+        <div ref={ctaRef} className="flex flex-col sm:flex-row flex-wrap gap-3 opacity-0">
           <a
             href="#projects"
-            className="inline-flex items-center gap-2 bg-apex-gold text-apex-black font-sans text-sm tracking-widest uppercase px-8 py-4 hover:bg-apex-gold-light transition-colors duration-300"
+            className="inline-flex items-center justify-center gap-2 bg-apex-gold text-apex-black font-sans text-sm tracking-widest uppercase px-8 py-4 hover:bg-apex-gold-light transition-colors duration-300 w-full sm:w-auto"
           >
             View Our Projects
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -149,7 +149,7 @@ export default function Hero() {
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 border border-apex-cream/30 text-apex-cream font-sans text-sm tracking-widest uppercase px-8 py-4 hover:border-apex-cream hover:bg-apex-cream/5 transition-all duration-300"
+            className="inline-flex items-center justify-center gap-2 border border-apex-cream/30 text-apex-cream font-sans text-sm tracking-widest uppercase px-8 py-4 hover:border-apex-cream hover:bg-apex-cream/5 transition-all duration-300 w-full sm:w-auto"
           >
             Speak to an Expert
           </a>

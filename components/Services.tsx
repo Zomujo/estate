@@ -107,7 +107,7 @@ export default function Services() {
               Our Services.
             </h2>
           </div>
-          <p className="font-sans text-sm text-apex-muted max-w-xs leading-relaxed md:text-right">
+          <p className="font-sans text-sm text-apex-cream/70 max-w-xs leading-relaxed md:text-right">
             End-to-end solutions across construction, real estate, design, and project management.
           </p>
         </div>
@@ -153,7 +153,7 @@ export default function Services() {
                         {item.name}
                       </h4>
                     </div>
-                    <p className="font-sans text-sm text-apex-muted leading-relaxed pl-7">
+                    <p className="font-sans text-sm text-apex-cream/70 leading-relaxed pl-7">
                       {item.desc}
                     </p>
                   </div>

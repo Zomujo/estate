@@ -134,7 +134,7 @@ export default function Introduction() {
             Excellence in Every Square Meter.
           </h2>
 
-          <p ref={bodyRef} className="font-sans text-base text-apex-muted leading-relaxed">
+          <p ref={bodyRef} className="font-sans text-base text-apex-cream/75 leading-relaxed">
             At Zabelo Builders, we do more than construct buildings — we create
             the spaces where life and business thrive. Whether you are looking for
             your dream home in Accra, a commercial hub in Kumasi, or a trusted
