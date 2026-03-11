@@ -95,7 +95,7 @@ export default function HighlightReel() {
               What Sets Us Apart.
             </h2>
           </div>
-          <p className="font-sans text-sm text-apex-muted max-w-xs leading-relaxed md:text-right">
+          <p className="font-sans text-sm text-apex-cream/70 max-w-xs leading-relaxed md:text-right">
             Four pillars that define every project we take on, from the first brick to final handover.
           </p>
         </div>
@@ -127,7 +127,7 @@ export default function HighlightReel() {
                 <h3 className="font-display text-2xl text-apex-cream group-hover:text-apex-gold transition-colors duration-300">
                   {item.title}
                 </h3>
-                <p className="font-sans text-sm text-apex-muted leading-relaxed">
+                <p className="font-sans text-sm text-apex-cream/70 leading-relaxed">
                   {item.body}
                 </p>
               </div>

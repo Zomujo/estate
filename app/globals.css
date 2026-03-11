@@ -10,6 +10,12 @@
   --apex-cream: #f5f0e8;
   --apex-muted: #6b6b6b;
   --apex-border: #2a2a2a;
+  /* Light theme palette */
+  --apex-light: #f9f7f4;
+  --apex-light-2: #f0ece5;
+  --apex-light-border: #e2ddd6;
+  --apex-charcoal: #1a1a1a;
+  --apex-charcoal-muted: #5c5a58;
 }
 
 @theme inline {
@@ -22,6 +28,11 @@
   --color-apex-cream: var(--apex-cream);
   --color-apex-muted: var(--apex-muted);
   --color-apex-border: var(--apex-border);
+  --color-apex-light: var(--apex-light);
+  --color-apex-light-2: var(--apex-light-2);
+  --color-apex-light-border: var(--apex-light-border);
+  --color-apex-charcoal: var(--apex-charcoal);
+  --color-apex-charcoal-muted: var(--apex-charcoal-muted);
   --font-display: var(--font-cormorant);
   --font-sans: var(--font-jakarta);
 }

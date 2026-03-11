@@ -68,19 +68,19 @@ export default function FeaturedProject() {
 
         {/* Project card */}
         <div className="relative overflow-hidden group">
-          {/* Image */}
+          {/* Image — shorter on mobile */}
           <div
             ref={imgRef}
-            className="w-full h-[65vh] min-h-[480px] bg-cover bg-center"
+            className="w-full h-[45vh] md:h-[65vh] min-h-[280px] md:min-h-[480px] bg-cover bg-center"
             style={{ backgroundImage: "url('/nsawam-bg.jpg')" }}
           />
 
-          {/* Overlay */}
+          {/* Overlay — stronger at bottom on desktop */}
           <div className="absolute inset-0 bg-linear-to-t from-apex-black via-apex-black/50 to-transparent" />
           <div className="absolute inset-0 bg-linear-to-r from-apex-black/60 to-transparent" />
 
-          {/* Content on image */}
-          <div ref={textRef} className="absolute inset-0 flex flex-col justify-end p-8 md:p-14">
+          {/* Content — on desktop sits over image; on mobile sits below via flex column trick */}
+          <div ref={textRef} className="hidden md:flex absolute inset-0 flex-col justify-end p-8 md:p-14">
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
               {/* Left */}
               <div className="flex flex-col gap-4 max-w-lg">
@@ -90,7 +90,7 @@ export default function FeaturedProject() {
                 <h3 className="font-display text-4xl md:text-6xl text-apex-cream leading-none">
                   The Zabelo Horizon
                 </h3>
-                <p className="font-sans text-sm text-apex-muted leading-relaxed max-w-sm">
+                <p className="font-sans text-sm text-apex-cream/75 leading-relaxed max-w-sm">
                   A master-planned gated community of 50+ premium plots in
                   Ghana's fastest-growing commuter corridor. Fully titled.
                   Affordable. Yours.
@@ -119,7 +119,7 @@ export default function FeaturedProject() {
                     key={spec.label}
                     className="bg-apex-black/70 backdrop-blur-sm px-6 py-4 flex flex-col gap-1"
                   >
-                    <span className="font-sans text-[10px] tracking-[0.3em] uppercase text-apex-muted">
+                    <span className="font-sans text-[10px] tracking-[0.3em] uppercase text-apex-cream/60">
                       {spec.label}
                     </span>
                     <span className="font-display text-2xl text-apex-cream">
@@ -129,6 +129,37 @@ export default function FeaturedProject() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Mobile-only: content below the image */}
+        <div className="md:hidden bg-apex-black px-8 pt-8 pb-4 flex flex-col gap-4">
+          <span className="font-sans text-xs tracking-[0.4em] uppercase text-apex-gold">
+            Nsawam, Greater Accra Region
+          </span>
+          <h3 className="font-display text-4xl text-apex-cream leading-tight">
+            The Zabelo Horizon
+          </h3>
+          <p className="font-sans text-sm text-apex-cream/75 leading-relaxed">
+            A master-planned gated community of 50+ premium plots in Ghana's fastest-growing commuter corridor. Fully titled. Affordable. Yours.
+          </p>
+          <a
+            href="/projects/zabelo-horizon"
+            className="inline-flex items-center gap-3 font-sans text-sm tracking-widest uppercase text-apex-gold mt-2"
+          >
+            Explore The Project
+            <svg width="20" height="12" viewBox="0 0 20 12" fill="none">
+              <path d="M0 6h18M13 1l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </a>
+          {/* Mobile specs */}
+          <div className="grid grid-cols-2 gap-px bg-apex-border/50 mt-2">
+            {specs.map((spec) => (
+              <div key={spec.label} className="bg-apex-dark-2 px-4 py-3 flex flex-col gap-1">
+                <span className="font-sans text-[10px] tracking-[0.3em] uppercase text-apex-cream/60">{spec.label}</span>
+                <span className="font-display text-xl text-apex-cream">{spec.value}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>

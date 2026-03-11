@@ -99,7 +99,7 @@ export default function About() {
               <h2 className="font-display text-5xl md:text-6xl text-apex-cream leading-tight">
                 Building Trust Since Day One.
               </h2>
-              <p className="font-sans text-sm text-apex-muted leading-relaxed max-w-md">
+              <p className="font-sans text-sm text-apex-cream/80 leading-relaxed max-w-md">
                 Zabelo Builders was founded with a singular vision: to elevate
                 the standard of construction and real estate in Ghana. Our team
                 of expert engineers, architects, and project managers combines
@@ -115,7 +115,7 @@ export default function About() {
                 <p className="font-sans text-xs tracking-[0.3em] uppercase text-apex-gold mb-2">
                   Mission
                 </p>
-                <p className="font-sans text-sm text-apex-muted leading-relaxed">
+                <p className="font-sans text-sm text-apex-cream/75 leading-relaxed">
                   To deliver innovative, high-quality, and sustainable real
                   estate and construction solutions that enhance the structural
                   landscape of Ghana and provide unparalleled value to our
@@ -126,7 +126,7 @@ export default function About() {
                 <p className="font-sans text-xs tracking-[0.3em] uppercase text-apex-gold mb-2">
                   Vision
                 </p>
-                <p className="font-sans text-sm text-apex-muted leading-relaxed">
+                <p className="font-sans text-sm text-apex-cream/75 leading-relaxed">
                   To be the premier real estate and construction firm in West
                   Africa, recognized for our integrity, architectural
                   brilliance, and commitment to community development.
@@ -137,7 +137,6 @@ export default function About() {
         </div>
       </div>
 
-      {/* Bottom — Core Values */}
       <div ref={valuesRef} className="max-w-6xl mx-auto px-10 md:px-20 py-20">
         <p className="font-sans text-xs tracking-[0.4em] uppercase text-apex-gold mb-12">
           Core Values
@@ -152,7 +151,7 @@ export default function About() {
               <h3 className="font-display text-3xl text-apex-cream">
                 {val.title}
               </h3>
-              <p className="font-sans text-sm text-apex-muted leading-relaxed">
+              <p className="font-sans text-sm text-apex-cream/75 leading-relaxed">
                 {val.desc}
               </p>
             </div>
